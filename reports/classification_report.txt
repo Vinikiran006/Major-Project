@@ -1,0 +1,13 @@
+Adaptive IoT Cryptography ML Evaluation
+
+Accuracy: 99.67%
+
+              precision    recall  f1-score   support
+
+     AES-128       1.00      1.00      1.00       228
+   ASCON-128       0.99      1.00      1.00       282
+     GIFT-64       1.00      0.98      0.99        90
+
+    accuracy                           1.00       600
+   macro avg       1.00      0.99      1.00       600
+weighted avg       1.00      1.00      1.00       600

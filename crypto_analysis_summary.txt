@@ -1,0 +1,45 @@
+ADAPTIVE IoT CRYPTOGRAPHY — LOG ANALYSIS
+================================================
+ESP32 log: esp32_serial_20261028_195326.log
+Receiver log: receiver_20261028_195318.log
+
+1. ESP32 algorithm selections
+--------------------------------
+Total parsed adaptive decisions: 81
+AES-128-GCM: 43 (53.1%)
+ASCON-AEAD128: 35 (43.2%)
+GIFT-COFB-128: 3 (3.7%)
+
+2. Encryption timing (microseconds)
+--------------------------------
+AES-128-GCM: n=43, mean=209.12, median=207.00, min=198.00, max=226.00
+ASCON-AEAD128: n=35, mean=127.60, median=126.00, min=125.00, max=134.00
+GIFT-COFB-128: n=3, mean=312.33, median=297.00, min=293.00, max=347.00
+Timing caveat: do not compare algorithms directly unless the timed regions match.
+
+3. ESP32 encryption / transmission status
+--------------------------------
+Encryption PASS: 81
+TCP SUCCESS: 81
+Transmission skipped: 0
+
+4. Receiver authentication and decryption
+--------------------------------
+Receiver records parsed: 82
+AES-128-GCM: records=44, auth_pass=44, decrypt_pass=44, rejected=0
+ASCON-AEAD128: records=35, auth_pass=35, decrypt_pass=35, rejected=0
+GIFT-COFB-128: records=3, auth_pass=3, decrypt_pass=3, rejected=0
+Receiver parsing depends on the receiver log's exact output format; spot-check the CSV.
+
+5. Adaptive behavior checks
+--------------------------------
+AES-128-GCM: mean security requirement=0.88, mean resource pressure=0.39
+ASCON-AEAD128: mean security requirement=0.52, mean resource pressure=0.35
+GIFT-COFB-128: mean security requirement=0.40, mean resource pressure=0.78
+These averages are descriptive, not proof that the decision policy is correct.
+
+Interpretation notes:
+- Battery/CPU/memory fields in the current demo are simulated context.
+- A TCP send success is not equivalent to receiver authentication/decryption success.
+- Use receiver-side PASS records to evaluate end-to-end success.
+- Security requirements should take priority over trying to equalize algorithm counts.

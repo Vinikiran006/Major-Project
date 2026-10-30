@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive IoT Security Framework</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="dashboard">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ADAPTIVE IOT SECURITY FRAMEWORK</p>
+        <h1>Context-aware cryptography</h1>
+        <p class="subtitle">Live simulated device context and adaptive encryption decisions</p>
+      </div>
+      <div class="device-pill"><span class="live-dot"></span> IOT-001</div>
+    </header>
+
+    <section class="panel">
+      <div class="section-heading"><h2>Device context</h2><span id="scenarioBadge" class="scenario-badge">NORMAL OPERATION</span></div>
+      <div class="metrics-grid">
+        <div class="metric"><span>Battery</span><strong><b id="battery">--</b><small>%</small></strong></div>
+        <div class="metric"><span>CPU usage</span><strong><b id="cpu">--</b><small>%</small></strong></div>
+        <div class="metric"><span>Memory</span><strong><b id="memory">--</b><small>%</small></strong></div>
+        <div class="metric"><span>Latency</span><strong><b id="latency">--</b><small>ms</small></strong></div>
+        <div class="metric"><span>Packet loss</span><strong><b id="packetLoss">--</b><small>%</small></strong></div>
+      </div>
+      <div class="context-grid">
+        <div><span>Threat level</span><strong id="threat">--</strong></div>
+        <div><span>Data sensitivity</span><strong id="sensitivity">--</strong></div>
+        <div><span>Scenario</span><strong id="scenarioText">--</strong></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>ML decision engine</h2>
+      <div class="decision-layout">
+        <div class="selected-card">
+          <span>Selected algorithm</span>
+          <strong id="algorithm">--</strong>
+          <span>Model confidence</span>
+          <strong class="confidence" id="confidence">--</strong>
+        </div>
+        <div class="probability-area">
+          <h3>Class probabilities</h3>
+          <div id="probabilities"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Algorithm switch history</h2>
+      <div id="history" class="history-list"><span class="muted">No events yet</span></div>
+      <p class="switch-note" id="switchNote">Waiting for scenario result…</p>
+    </section>
+
+    <section class="panel">
+      <h2>Encrypted IoT payload</h2>
+      <div class="payload-meta"><span>Original message</span><span class="tag">Simulated sensor data</span></div>
+      <pre id="plaintext" class="payload">Loading…</pre>
+      <div class="payload-meta"><span>Ciphertext (hex)</span><button id="copyCiphertext" class="secondary small-button" type="button">Copy ciphertext</button></div>
+      <pre id="ciphertext" class="payload ciphertext">Loading…</pre>
+      <div class="verification-grid">
+        <div class="status-card"><span>Encryption</span><strong id="encryptionStatus">--</strong></div>
+        <div class="status-card"><span>Decryption</span><strong id="decryptionStatus">--</strong></div>
+        <div class="status-card"><span>Payload match</span><strong id="matchStatus">--</strong></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Performance metrics</h2>
+      <div class="performance-grid">
+        <div class="performance-card"><span>Encryption time</span><strong id="encryptionTime">--</strong><small>milliseconds</small></div>
+        <div class="performance-card"><span>Decryption time</span><strong id="decryptionTime">--</strong><small>milliseconds</small></div>
+        <div class="performance-card"><span>Round-trip verification</span><strong id="roundTrip">--</strong><small>Original equals decrypted</small></div>
+      </div>
+      <p class="disclaimer">Timings are measured in this Python simulation and are not hardware energy or IoT-device benchmarks.</p>
+    </section>
+
+    <section class="panel pipeline-panel">
+      <h2>Encryption pipeline</h2>
+      <div class="pipeline">
+        <span>IoT data</span><i>→</i><span>Context</span><i>→</i><span>ML decision</span><i>→</i><span id="pipelineAlgorithm" class="active-step">Algorithm</span><i>→</i><span>Encrypted</span>
+      </div>
+      <p id="pipelineStatus" class="success-line">Checking verification…</p>
+    </section>
+
+    <div class="actions">
+      <button id="nextScenario" type="button">Next scenario <span>→</span></button>
+      <button id="reset" class="secondary" type="button">Reset demo</button>
+      <span id="actionMessage" role="status" aria-live="polite"></span>
+    </div>
+    <footer>Adaptive IoT Security Framework · ML + Context-Aware Cryptography</footer>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

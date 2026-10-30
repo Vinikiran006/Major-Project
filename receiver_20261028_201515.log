@@ -1,0 +1,409 @@
+Secure IoT receiver listening on port 5000
+Supported algorithms: AES-128-GCM, ASCON-AEAD128, GIFT-COFB-128
+Waiting for ESP32 messages...
+
+Connection from ('192.168.29.43', 51188)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.6
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51189)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.5
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51190)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.5
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51191)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: GIFT-COFB-128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.4
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51192)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.5
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51193)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.6
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51194)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.1
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51195)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.1
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51196)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.3
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51197)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.4
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51198)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.9
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51199)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.8
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51200)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.0
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51201)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.2
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51202)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.1
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51203)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.2
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51204)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.0
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51205)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: GIFT-COFB-128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.7
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51206)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.7
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51207)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.6
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51208)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.4
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51209)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: GIFT-COFB-128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.5
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51210)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.7
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51211)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.7
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51212)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.6
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51213)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.6
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51214)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: ASCON-AEAD128
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 62.8
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51215)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.2
+}
+Connection closed.
+
+Connection from ('192.168.29.43', 51216)
+
+Encrypted message received.
+Device: ESP32-DHT22
+Algorithm: AES-128-GCM
+Authentication: PASS
+Decryption: PASS
+Recovered sensor data:
+{
+  "temperature": 26.5,
+  "humidity": 63.3
+}
+Connection closed.

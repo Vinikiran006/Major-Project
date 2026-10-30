@@ -1,0 +1,2407 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4876
+ho 0 tail 12 room 4
+load:0x40078000,len:16560
+load:0x40080400,len:3500
+entry 0x400805b4
+
+Adaptive IoT Cryptography
+ESP32 + DHT22 + AES-GCM + ASCON + GIFT-COFB + TCP
+Connecting to Wi-Fi...
+...
+Wi-Fi: CONNECTED
+ESP32 IP: 192.168.29.43
+Context simulation: ENABLED
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 82 % (simulated)
+CPU usage: 40 % (simulated)
+Memory usage: 60 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.25
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 134 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: C3D8E66E68BCBA029D9C603A529484D7
+Ciphertext + authentication tag: FC8CDA2FEFAFBA6DB3FF9D1C9B555CE469BB1C21695E4F8C347F4BB34133E614217C985E1800FE5BAA23F45FD5C26F06DCEA6EF9
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 49 % (simulated)
+CPU usage: 81 % (simulated)
+Memory usage: 43 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.70
+Resource pressure: 0.50
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 222 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 1C4757EB23BD37C464B6BF89
+Ciphertext: 0E67F907BDB7516BE26D43D6B2FE92A6F40C40D66CF7DCBA309C49F47DF60A2EE9BF8A94
+Authentication tag: A91FCB962CC78D4957490F2D1272D956
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 78 % (simulated)
+CPU usage: 77 % (simulated)
+Memory usage: 82 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 202 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 6FA8118FC3CB344A7406C383
+Ciphertext: 1DF87A1420648EED8421A90C28F86AA1670E328D95EC5EA5102D327CC811421460FCDFBF
+Authentication tag: 37089D9F9B293B259FB1616D18A15757
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 16 % (simulated)
+CPU usage: 67 % (simulated)
+Memory usage: 84 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.75
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 207 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 61C451CFCCE9693211EC43BA
+Ciphertext: 07BE529A0CE8310DBF8A486AB9E7D53FDD02C634900B9FC466A559EE4206C2C340E238E0
+Authentication tag: A4B9CDB818A35E90FEA850FD86FEE98A
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 59 % (simulated)
+CPU usage: 52 % (simulated)
+Memory usage: 30 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 201 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: E204DCFA4EA6F4F375F8BA49
+Ciphertext: 5C1ACEBA169FC79EC3B5D9C720078DCB2966516F39522D674C58B441450EB94872337AD2
+Authentication tag: 6307EC4A0F3A142F79A99B2488878104
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 26 % (simulated)
+CPU usage: 18 % (simulated)
+Memory usage: 70 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.55
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 132 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: EA376832050207B17DC1EB89F4E4F9C8
+Ciphertext + authentication tag: 6D6CA1FD6BE4A3CABA30C6BDD0B1E7B8760C6633B90BB197F093BD4659DB9EC3F1654EE8B28A0AD3F86A15AF96A94B0F08655682
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 80 % (simulated)
+CPU usage: 68 % (simulated)
+Memory usage: 21 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.25
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 5827C9BBC70AC700324EA937C00D80F4
+Ciphertext + authentication tag: 1E838CDB0C6BC75499E287B380868589018B3DDEF5C1025004D2C8BA889C4F567BA2096AE513216B57A7FE7C3E90AC53E4298A9F
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 20 % (simulated)
+CPU usage: 87 % (simulated)
+Memory usage: 44 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.65
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 215 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: D400AC535EA2980DDC8D6F99
+Ciphertext: AFA492DAAE2A7C7377FA11465267131B355758B421E5D90E66BFC299F487D6257E74ADFB
+Authentication tag: 2B32597B85D7179436798AAF53CD598C
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 10 % (simulated)
+CPU usage: 92 % (simulated)
+Memory usage: 43 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.80
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 200 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: BF3C65C701FC7D4938266D44
+Ciphertext: 7C02A1FEAD70168381F2142D2CC2F87C3B8F126BFF3D5A9347C3BBF080BDF2B1939DDE12
+Authentication tag: FF45B494B47BF1F734A258BBAC5A3E48
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 31 % (simulated)
+CPU usage: 81 % (simulated)
+Memory usage: 88 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.70
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 130 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 3A20FA26BB5AE7A812657CB7BB2D5AE6
+Ciphertext + authentication tag: F12A54D77017EE4CDC64760E81004A4BC6CB9C571AB9906C407C28DD9E889D7E5B126F188567BBBD2443E659308D0F1B182846B6
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 11 % (simulated)
+CPU usage: 32 % (simulated)
+Memory usage: 40 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.60
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 217 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: D366661C7597541039F6F7F4
+Ciphertext: 88C75E68BD775C7AD1B0032019846306D85C5C11196E6338C47C6E4203D9E4F3188B9735
+Authentication tag: 445EDD5BE143DF61378609A5E4C68AAC
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 86 % (simulated)
+CPU usage: 13 % (simulated)
+Memory usage: 76 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.25
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 226 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 8CA9044E3060F97F3C425BE7
+Ciphertext: 7F19DEFD49D0560500668A1720831E19E6016975D45963AAA7C6C327C14C748BE2F2B65B
+Authentication tag: 6B6A3E3330E1EBD449F5380AE1CAFB4C
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 81 % (simulated)
+CPU usage: 29 % (simulated)
+Memory usage: 59 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 208 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 97CAC56576920E74E17D2CD5
+Ciphertext: CDE95A48F148C9086A34A0F9A9058DC2B93AC5D1292DCB066BC2C95A8FC546A683D8F027
+Authentication tag: 79986B16973EBBC98BA1F68873C9CC3E
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+����������������������������������������������������������������--- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 20 % (simulated)
+CPU usage: 78 % (simulated)
+Memory usage: 42 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.55
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 127 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: A9E3E9A121E887BAD930003FDAD86F4B
+Ciphertext + authentication tag: BB9F99E02385D8A5781B5CE9385AC244E256AE31F3E91BD0BFCBA0F10C836CD93497B6BFDFFE73DA5D30FD9E9C87402BB16CC70C
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 18 % (simulated)
+CPU usage: 91 % (simulated)
+Memory usage: 24 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.65
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 217 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 1D985E9F38C5B9E93F699AF2
+Ciphertext: D30CA440DDD3401086E8354644D327B664F9451B0149E714FEC513A7EB3561797EEF18E0
+Authentication tag: DD4DDD427D2237B72AD981E5BD2E7B32
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 36 % (simulated)
+CPU usage: 25 % (simulated)
+Memory usage: 51 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.30
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 130 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 0A03EA74471A2CABF35B669C861BE562
+Ciphertext + authentication tag: 1A454DB0424CA925F1F193011925ACC35C3C3627B6ABBEB32551705563289BF43A1E77B34C60F8AD4795252613D6E405EEF30A63
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 64 % (simulated)
+CPU usage: 50 % (simulated)
+Memory usage: 31 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 213 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: EF84A33D2F2E880F599222BD
+Ciphertext: 2D93600FC4C1FBDB7ADFC5470CFA0254B18B853B1E7817CA9F03A9AC0D864AD7DFAC51BC
+Authentication tag: 53B03D02811F3CBF55009A57DEDC5348
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 99 % (simulated)
+CPU usage: 63 % (simulated)
+Memory usage: 75 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 0A5EE79CE68059E95B1436CC8EA08A45
+Ciphertext + authentication tag: 78CBD06E7F5304A0A38E087F27A46D12806F7E3BE33031D4FF6233E6D8E661B0D235EA460DC2EA6126BD303471FF4BA765D8DA41
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 78 % (simulated)
+CPU usage: 91 % (simulated)
+Memory usage: 53 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: A425BFCAD25C0562FCCBFDB16373FDEF
+Ciphertext + authentication tag: FD64E2E762936F9E48DF85D25B408417F94106AEF063B0E948CADDDC86ECAFDBFA45EBC463616CA57838DA4861623698C28DA40C
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 10 % (simulated)
+CPU usage: 37 % (simulated)
+Memory usage: 73 % (simulated)
+Sensitivity: LOW
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.70
+Selected algorithm: GIFT-COFB-128
+GIFT-COFB-128 encryption time: 347 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: GIFT-COFB-128
+Nonce: AF9B38D67B7008E389A183E726C17857
+Ciphertext + authentication tag: 49A97ADECA5ABD33860B3331A408C8C9253DDEC4C62FF4C91DA0B01F560FE80017AACDA38F5DA8509C3A8DD6278AB2EBA0EB94C7
+Connecting to laptop receiver...
+GIFT TCP connection: SUCCESS
+GIFT-COFB-128 encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 88 % (simulated)
+CPU usage: 29 % (simulated)
+Memory usage: 80 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.35
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 218 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 5F197ADF6DA4CD8D2EF18EF8
+Ciphertext: D6A46F84DEB543E33BEC1E9B66E8E778CC8FB76DE2D3A47A034F963FCF005A7434198E95
+Authentication tag: 811B73A8AC31B0BBFB5B8A25A67BBD47
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 17 % (simulated)
+CPU usage: 38 % (simulated)
+Memory usage: 28 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 2A8E76AC4671435EB2EA23E8B35B8D38
+Ciphertext + authentication tag: 198B19F7665D3D62FF92B9A8AA34CD5BF741C6C375A5E18B1332329FED1E5AEE2E696C678F4AA62BE094D93446F244FE4D62FB30
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 73 % (simulated)
+CPU usage: 84 % (simulated)
+Memory usage: 40 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: C0C12A232951E0E0C4FE3BE0F1653E01
+Ciphertext + authentication tag: CEC28734D1763ADFB5D3FC1BBDA107DB1311913E39D22D0D9FA6AE6C4604040008009622B073BEE3AD7E0BFE1522CA310890D1BB
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 52 % (simulated)
+CPU usage: 81 % (simulated)
+Memory usage: 26 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 09D23D93868244D702BAC9F554059D69
+Ciphertext + authentication tag: DA691DC19450C632BA0A0F1629C09719EE23411FBADFC8E9C22623BF1440E9922AAE281C807869DCA171E76E36310B813D1045DB
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 94 % (simulated)
+CPU usage: 37 % (simulated)
+Memory usage: 61 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.25
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 217 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 7620D42F905C6289DFEB1FE8
+Ciphertext: E65F8E015B3D30DEA5C0159B09FC07A82EABA0A8AB43853B9CEFF92F58D0205F77CC3992
+Authentication tag: B2990DC4DE15F7A46513863A8E6361E3
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 50 % (simulated)
+CPU usage: 12 % (simulated)
+Memory usage: 26 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.30
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 131 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 2EB4ACCA0D99F201488C9E015D5CF98D
+Ciphertext + authentication tag: DBE7FEBFF8AC68A53BBABA19FEC52F89E3BD765D1FA542377B9A3956E757E605F2DDC34A7CA7A2E6C966D10791346EFD61EEFA4B
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 79 % (simulated)
+CPU usage: 27 % (simulated)
+Memory usage: 27 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.15
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 236E833D89E4D04B6B2AC882792BFEA2
+Ciphertext + authentication tag: F3BAC9E4638FBD1B598055D37E3A076D96007B987AFFA50728985623534080D30A3748FFAE0C3A628D0D30FA3762CE9CCA4E9558
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.3 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 17 % (simulated)
+CPU usage: 22 % (simulated)
+Memory usage: 56 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 216 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 4F15796F76926AB83D05E073
+Ciphertext: 0A5FD404E1EC5A0D40498A7283CA7AC0FEF30B439048BF25AB7B7A6F0B476FF37B965201
+Authentication tag: FA25252988943AA35E29CBF4B2DEBBA0
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 49 % (simulated)
+CPU usage: 51 % (simulated)
+Memory usage: 66 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.40
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 201 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 366CB54E4B624E9267220253
+Ciphertext: FEDCFDDFAC187D15027672DBF36AB64867D838217ED5033BFA086017B6A6E6F724DFD224
+Authentication tag: 8796D9FB8FB320A99E9BAD8605A00922
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 24 % (simulated)
+CPU usage: 16 % (simulated)
+Memory usage: 40 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 47841E36ED6076DEBFD87A622A4585A2
+Ciphertext + authentication tag: 932589860960D3AE8F74DD507D2F9955FAE2A4ABD4F737C786A4444A447B582A955A9A880467A07C31443D3BD9521E6D18FE756D
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 68 % (simulated)
+CPU usage: 33 % (simulated)
+Memory usage: 43 % (simulated)
+Sensitivity: LOW
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.20
+Resource pressure: 0.15
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 34FA4C62F53EA6F58525DF269A7A4AD7
+Ciphertext + authentication tag: 69B7DD857994873789DA99CD94829A8F079F6285B099E64408F53704B9E74935693D3BCF8A6D2EC34695AC3469A652625C060134
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 90 % (simulated)
+CPU usage: 47 % (simulated)
+Memory usage: 43 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 217 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: A25015B6A1DBE4FCC878EDF9
+Ciphertext: 34F7B4BF1950371FEAFD238DA5E82E1A258310C0D51547927D68FFB94CE4B1479A622F33
+Authentication tag: FBAC901D7FD201977D96B747618612F3
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 44 % (simulated)
+CPU usage: 57 % (simulated)
+Memory usage: 49 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.30
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 130 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: E37614B6B9B284DC1F90D96ED939331B
+Ciphertext + authentication tag: D8C18BB124861F903456C292F2895E2EE61AFA90C972A8EC34C9FA105D738B7905AC8094DF616FD3D3E08DE4089B71326383995A
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 89 % (simulated)
+CPU usage: 94 % (simulated)
+Memory usage: 55 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.35
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 216 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: EFA4EC9502E2016ACF3DBDF0
+Ciphertext: DE74B90BF583D59C0731B816DC99AF1BF655C2FF96B45BF801CD16BE9163F069AA685844
+Authentication tag: 57608DE5E2B9458749C1CFE04ED3579D
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 63 % (simulated)
+CPU usage: 83 % (simulated)
+Memory usage: 62 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 2540BA2CBA4EA728E0AC97A0
+Ciphertext: 43FBC28277201A4D5A7C2F15CC6D10F8275306F11FCD95359EB421DCA8F8FBEA30DBCFF2
+Authentication tag: 3DB0ABBA6EE5AFCEE8300ECEB9FC716D
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 72 % (simulated)
+CPU usage: 53 % (simulated)
+Memory usage: 52 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.70
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 208 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: BA0E6CA9160FA6461654BBDD
+Ciphertext: 3F1A83470D60B51F7728932046A795A6A83B5645DF6D2E04A2FF04D2539EF9B3BE8AE488
+Authentication tag: BDD4EFA59A39F9B5AC6BFBF025C8796E
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 27 % (simulated)
+CPU usage: 63 % (simulated)
+Memory usage: 20 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.70
+Resource pressure: 0.55
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 0CF18235FF1D144D2707C861
+Ciphertext: 5A8B515B97547D27BD96E9081D243E9CD92CB91A5FCABB7D22A5DB3C78E4E94A94EA92A0
+Authentication tag: 6C6F46EB3BB23B0E504B7C6338844417
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.2 %
+
+----- SIMULATED CONTEXT -----
+Battery: 67 % (simulated)
+CPU usage: 95 % (simulated)
+Memory usage: 24 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.35
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 207 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: ED8164354BDDFD32E483BD1B
+Ciphertext: 3327A685A070A5CA214CF66952C4EC970923FA90E2ABC053AAA7B91EFDDBD554EAC69B7D
+Authentication tag: C6C4B4DD2FE423350447717C08DD07B1
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.4 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 62 % (simulated)
+CPU usage: 71 % (simulated)
+Memory usage: 40 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.25
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 731A2C498A04212E276EB328971B5A1F
+Ciphertext + authentication tag: 338244D5C4121AB43B8B901B61339763A2AEF6E8485D090C5BAC1D55D0F22CF9A2D8D95DFFB2AF8619EAE90CDE2E2B3BBCECAC9E
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 87 % (simulated)
+CPU usage: 68 % (simulated)
+Memory usage: 82 % (simulated)
+Sensitivity: LOW
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 07EFA3C412FF11A11BDDBEA948D1C56B
+Ciphertext + authentication tag: 4B0FF3301CD87DF16BF0E82E8C8E7E55CF86AB70E7FD45F465F138EDBB301CA0F2116CFA9F84FB29FDFF334C7D1E8F009ACFC17A
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 61 % (simulated)
+CPU usage: 70 % (simulated)
+Memory usage: 85 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 0103D1880F7F1AC2D5E19F7AD9C84FFA
+Ciphertext + authentication tag: B6C348C7903DE2FC1841D0FDB4D94E7537FB62173A7358D46A3504F5341959BEB0C52BC5A40873E0EB47B5050E1CE7CBC73BDE48
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.0 %
+
+----- SIMULATED CONTEXT -----
+Battery: 59 % (simulated)
+CPU usage: 14 % (simulated)
+Memory usage: 54 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.15
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: D9881FDF17978E0EB6992A54982953C3
+Ciphertext + authentication tag: 05488929510C4940CB99AEABFC86703DE646E8F4DC924F21D74012B8575F84EA361E74FC114C6C536506A19E1C79B8A7787D7CF1
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 64 % (simulated)
+CPU usage: 42 % (simulated)
+Memory usage: 34 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.15
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 391B389B4F87B76238B5C2366C165FA7
+Ciphertext + authentication tag: 603B8E3CEBF1F143143CADCDBF33680C6C912CF54EFF3474E8FA2932655B114581D2A010D6EC8769BB00D20FF2000FB581F952E6
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 16 % (simulated)
+CPU usage: 13 % (simulated)
+Memory usage: 63 % (simulated)
+Sensitivity: MEDIUM
+Threat: MEDIUM
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.70
+Resource pressure: 0.55
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 215 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 7223C1229EDD9D810A5BFD05
+Ciphertext: C162F95D6F5183B7B32E1424A79BFFE1E047676A83711AB818F70D74EA9676E52B54FF13
+Authentication tag: C6ECD71C4DF1AC9876557E7991CA1A9F
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 78 % (simulated)
+CPU usage: 90 % (simulated)
+Memory usage: 64 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 19D94CEA65829370CDD65C3E
+Ciphertext: 0B9BA8B40F34A2BC9B857BFDE2E97B77D7853D60A8ABA9D2C3CB3A1E278311A5165F9075
+Authentication tag: FE39B9C64723EF363F761889EB4D69FE
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 41 % (simulated)
+CPU usage: 67 % (simulated)
+Memory usage: 69 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.50
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 206 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: EF82C311471C51B87F428400
+Ciphertext: 49C55F7174D5E7E1E701055340280D17BAE547F4BDC47B26C084A1D28EFF490201203461
+Authentication tag: AF500BC1098FD28AEFA06421751BCC78
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 18 % (simulated)
+CPU usage: 41 % (simulated)
+Memory usage: 26 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 3BB69620B7C9FBAF920C4F3D
+Ciphertext: 52F7881FE1E8EB5EE135FCD64D5041ED0231DFAB1025D56F00543AAA7ACF8F28D4796696
+Authentication tag: 0629ACD42B744D54134D2605D4CB5069
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 60 % (simulated)
+CPU usage: 38 % (simulated)
+Memory usage: 73 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.25
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 206 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 5154FCB098F43A38ACAB5EDC
+Ciphertext: 742F66C15ADBB9A385D5F237420A6FBF3DCB80A5B1CFCF9A996E0C2FD5BABCBBC2E65199
+Authentication tag: 19C784A7AC62709AC55312A1850FEC9A
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.1 %
+
+----- SIMULATED CONTEXT -----
+Battery: 88 % (simulated)
+CPU usage: 83 % (simulated)
+Memory usage: 68 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 130 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 034D0F2AC1EBC5062B297877E22A252C
+Ciphertext + authentication tag: FB3F08CC8C9A74DCAF13DD8CE88BBBBE18087172C3AA070E0E316CFF73BBA405EC3D791FDB5CE6029E2F6253E9FEB0D8D3AE5D45
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.0 %
+
+----- SIMULATED CONTEXT -----
+Battery: 100 % (simulated)
+CPU usage: 28 % (simulated)
+Memory usage: 36 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 217 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 478743CEDF78C38B42C7370E
+Ciphertext: A3D1DAAB4B2457EA4CBD1D06EEE2F5DE7BDE3DFBD1AA630EB012600C8389A2A2A3BF769B
+Authentication tag: 935B1EB46E190CCD403E8EA971E85905
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.9 %
+
+----- SIMULATED CONTEXT -----
+Battery: 67 % (simulated)
+CPU usage: 78 % (simulated)
+Memory usage: 82 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 5A433D069E181952E701A8E2629EDE37
+Ciphertext + authentication tag: 38B04B157CB338E06ACE3C500E6A59406C3B6AB0F89D77FAD69E656E19E701B77B7DDD9A7644CB88BB7AEFA32CCFB789D0A1F394
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.9 %
+
+----- SIMULATED CONTEXT -----
+Battery: 79 % (simulated)
+CPU usage: 25 % (simulated)
+Memory usage: 32 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 213 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: C9E15A3ED15DEE45FD9B483F
+Ciphertext: A1B4F93B4BA02F9BA5846B7D7400FDBD2927DBE430E9323BC96022B569C816DB9FC507E6
+Authentication tag: 70A80FC279EE1250DC9A07C79766E671
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.9 %
+
+----- SIMULATED CONTEXT -----
+Battery: 10 % (simulated)
+CPU usage: 74 % (simulated)
+Memory usage: 74 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.80
+Selected algorithm: GIFT-COFB-128
+GIFT-COFB-128 encryption time: 293 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: GIFT-COFB-128
+Nonce: 017B3C5AC933AB6211CFDD3F9E4F1425
+Ciphertext + authentication tag: 56E8D153D7C24C4DE20C0B2692DB34E5E75909999F4CF2A91D4700CE3752BAF8E860BBB96C349E2F288D7B6A621C13FBF0DB0867
+Connecting to laptop receiver...
+GIFT TCP connection: SUCCESS
+GIFT-COFB-128 encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 20 % (simulated)
+CPU usage: 15 % (simulated)
+Memory usage: 22 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 226 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 303D7E3245306F8060B059CE
+Ciphertext: F0015713CBA6B346EE60A8DCC916B5904CA70BCFC9292ADB3869FF7DEA5C599E78C57641
+Authentication tag: 1E51A50CC631725A0CE27CAE5FC1DF1F
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 37 % (simulated)
+CPU usage: 35 % (simulated)
+Memory usage: 44 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.30
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 0E39D8F557BDC1800D206DAA3570D807
+Ciphertext + authentication tag: A5CFC4FC0C522E2EAF7CC35DCA669C742E95786DE36C3B608BDB5E732582EF50BBDB180C93246E7BDC070F84ECC7A61757897797
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 97 % (simulated)
+CPU usage: 90 % (simulated)
+Memory usage: 48 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 087B8ED5BFA57756C7A50624DF59F1D7
+Ciphertext + authentication tag: E3BA524E45B8CBD16FA6EDA8CC970B1A9BB8D149F1524FE8DFF79DF347676B35731CC942CF6303FBF4D10744F6FC2928AECE8409
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 81 % (simulated)
+CPU usage: 52 % (simulated)
+Memory usage: 86 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 127 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: E8B17BB389E39A214A7948E99DC9E9C4
+Ciphertext + authentication tag: 3A899A78A9EA62EBF7F033F116266C008965E8A139765F4BCFA7373805953AECBBB7506FA042D5EF2C69D0C4335D0FCE40D12B03
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 37 % (simulated)
+CPU usage: 39 % (simulated)
+Memory usage: 54 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.30
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 129 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: B7690F9E871AB900E723BBFA4625AC4D
+Ciphertext + authentication tag: 8593217B4A6822EBA85CCF87D1BEBE09AA2DC4CE60BEF324615B23E778C041717E46A7C4201B0BB4E1268A7E0341AC1DFB117964
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 53 % (simulated)
+CPU usage: 31 % (simulated)
+Memory usage: 55 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.15
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 490CA07ADBB1C05DBCBDA4DD227BB52C
+Ciphertext + authentication tag: 6A5A887BADB701BD175903ABB82BCA72BEC25BCAAF3559393B98682DE583C82785193A73B5D9BE1E492E8B3F123A6804F66000EC
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 98 % (simulated)
+CPU usage: 32 % (simulated)
+Memory usage: 45 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 212 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: F9634BF4C769360264611D1A
+Ciphertext: 5EB756CB2AE90D834CF52A8E382BAEF94576C6D0B847E1AA3D3CF5B23E9D8739B5E44010
+Authentication tag: E147068B8318AAC40C0269417FC241C6
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 59 % (simulated)
+CPU usage: 41 % (simulated)
+Memory usage: 27 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 201 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 705A2DC309316B83C8D8F7F9
+Ciphertext: FFFC126FEAFE4D038DCF0636364D9CF1CAFC9EC5A01AE15D34AA5778FD103BE2598727FB
+Authentication tag: 7516E2209D637CB0FAAF56924FCC0BC9
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 25 % (simulated)
+CPU usage: 44 % (simulated)
+Memory usage: 82 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.65
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 207 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 595D2968642B5B387F1C7128
+Ciphertext: 6E09B9EF848C7E23A01B9FDDBF3F4FBC6AB76758619663C0509FE651B84AF0D4B0E37951
+Authentication tag: 92632F3D3D16BE9DD1EA88EDB64F47A4
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.6 %
+
+----- SIMULATED CONTEXT -----
+Battery: 62 % (simulated)
+CPU usage: 94 % (simulated)
+Memory usage: 43 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.35
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 202 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 2CF13197731D73F45F5AC57B
+Ciphertext: C027C1A20425ABE1614161C70A5E7C5A9598F05897BEAB664F8AB8E2AA6FB37139718845
+Authentication tag: 728E3F14789917AD091C2191CAB11D5A
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 61 % (simulated)
+CPU usage: 12 % (simulated)
+Memory usage: 62 % (simulated)
+Sensitivity: LOW
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.25
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: D916FFDED1B88AA415925CE2C41BA475
+Ciphertext + authentication tag: 72024AF6145ECDCAB4EF469E5E6ACF444533C123A751BA2CBC592162C751C09BF8415DEF1E203EF71C376B4B34A9C3C58419B30E
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 81 % (simulated)
+CPU usage: 20 % (simulated)
+Memory usage: 28 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 213 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 983B4BB72108B7731C9F07E1
+Ciphertext: 567B7E4FD8E03A00E5AC8B19B83C2E09712D0A45734F3AE6AD573E5C1BA54C1914118F9D
+Authentication tag: 4638FB84CAD4969918F2A37588CAB4B7
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 23 % (simulated)
+CPU usage: 87 % (simulated)
+Memory usage: 52 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.70
+Resource pressure: 0.65
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 198 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 7BAFACC71615534C8F607082
+Ciphertext: BBC92ABCA06F934DCD8257872EDD3275F6223A6C7D9D8AB3474A1A796BDDEC09F5493C5C
+Authentication tag: E645146FD76E377C4A90B443E70B208C
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 33 % (simulated)
+CPU usage: 62 % (simulated)
+Memory usage: 89 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.60
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 19F5CA71A4650A063F832715
+Ciphertext: A6452879563CE173ED6CC3B84933B8DB27DE375FEBC964964322C9666F83CE40D12BB280
+Authentication tag: 93861D0B9269519EFC115997F4892CA2
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 91 % (simulated)
+CPU usage: 64 % (simulated)
+Memory usage: 75 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.90
+Resource pressure: 0.35
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 199 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 98C363A89BF077CEC18136B9
+Ciphertext: 8180B1370CF3F0B96B3CCC5A573A5292AB9E39D20B32BC5E270572FBAB7BE06EF119EFB1
+Authentication tag: DC085A1840A3D83ED894E094B174590D
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.3 %
+
+----- SIMULATED CONTEXT -----
+Battery: 56 % (simulated)
+CPU usage: 85 % (simulated)
+Memory usage: 78 % (simulated)
+Sensitivity: LOW
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 130 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 3C2C3E1A95D2914D6E60623E5687F17B
+Ciphertext + authentication tag: EC67150CA2206C7484AA1A32AF8F935319EFE199D578AAE72EE9C24D0B61777D93713023931D869AE03CEF6925E84E7B510FEB62
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 63.4 %
+
+----- SIMULATED CONTEXT -----
+Battery: 79 % (simulated)
+CPU usage: 47 % (simulated)
+Memory usage: 66 % (simulated)
+Sensitivity: LOW
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.30
+Resource pressure: 0.25
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 105B88BA8B98289B688D5BADF2B4246A
+Ciphertext + authentication tag: 52B5A44FEEFD8704E9E95D7294290587C397967B7A468F01C099FD021D5A323748D3E3C60E91FDD33D03D260D36A3A6DFC77AF67
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 44 % (simulated)
+CPU usage: 37 % (simulated)
+Memory usage: 25 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.30
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 212 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: E00E600058AAE9E98EC0EE8F
+Ciphertext: E7EABFB739A7A73812535F23F447D66B0E35768CC492BDAE2D7C8DFAD1C89AF7647C2C5B
+Authentication tag: B1C5228D4A33DE2E9DE621D73296DADE
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 13 % (simulated)
+CPU usage: 72 % (simulated)
+Memory usage: 47 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.70
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 199 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: C5C187B218C69EF845744DDE
+Ciphertext: C286AE56F799ED4E82A2F53879F675ECF54A92225754768854B2BDEE2446102EBAA45EF3
+Authentication tag: D1EF64ACAB1A2723159E721843F1A525
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.5 C
+Humidity: 64.0 %
+
+----- SIMULATED CONTEXT -----
+Battery: 71 % (simulated)
+CPU usage: 93 % (simulated)
+Memory usage: 67 % (simulated)
+Sensitivity: HIGH
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: AA3AA10422015053607AB9C63AEB3394
+Ciphertext + authentication tag: AB50E1EC7ECEEA6D85720A4845844DCBA8355E7E8156CAF3E70CEACCC82991BC2DE64873AC802E97FA17075EA2AB1F9A1C43A1DE
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.9 %
+
+----- SIMULATED CONTEXT -----
+Battery: 98 % (simulated)
+CPU usage: 84 % (simulated)
+Memory usage: 77 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.60
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: F6061FD4ECF800CED1201A6D588B4910
+Ciphertext + authentication tag: 0124EE4F615A9B9AA7A0F20B643AA7D590595262C3009C2BBA4260314FA8E6BA57E3BFF03BF653491D220C6EFEB50C17F78E49ED
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.9 %
+
+----- SIMULATED CONTEXT -----
+Battery: 87 % (simulated)
+CPU usage: 88 % (simulated)
+Memory usage: 75 % (simulated)
+Sensitivity: HIGH
+Threat: MEDIUM
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 213 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 05267F2689CEDC746750919B
+Ciphertext: 0D520E64FC3ECFA178FC4C90C3D677CDA9C6017B79DCEC8A0895A05138A7CBB01F8B4706
+Authentication tag: 16A8A61B3CC241E3A2AC2A1C7478AA43
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 64.0 %
+
+----- SIMULATED CONTEXT -----
+Battery: 89 % (simulated)
+CPU usage: 31 % (simulated)
+Memory usage: 69 % (simulated)
+Sensitivity: MEDIUM
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.80
+Resource pressure: 0.25
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 202 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 8D69AFB625A3191E0FCD5352
+Ciphertext: CD583F59AF7B7E79D3D3DBD8B09C1171068D3110AE3EC3D93B8C6D75C073D1073E51617B
+Authentication tag: DD6340EAB6A978C981369874BF6D4E48
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 64.0 %
+
+----- SIMULATED CONTEXT -----
+Battery: 23 % (simulated)
+CPU usage: 91 % (simulated)
+Memory usage: 88 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.85
+Selected algorithm: GIFT-COFB-128
+GIFT-COFB-128 encryption time: 297 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: GIFT-COFB-128
+Nonce: 7A80A699EF1C3145CA15368BEF0D428E
+Ciphertext + authentication tag: 6142FA8D206EA4F3C6702F920014D249FADD9D1DEB4B27207DEF4993FFA9B548694215AD64D3AC9A1CEDBD06E63C778D5F157A8C
+Connecting to laptop receiver...
+GIFT TCP connection: SUCCESS
+GIFT-COFB-128 encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.8 %
+
+----- SIMULATED CONTEXT -----
+Battery: 68 % (simulated)
+CPU usage: 67 % (simulated)
+Memory usage: 84 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.45
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 205 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 28B2679E36137FF6BE2F4F2A
+Ciphertext: 2BD814F0542B2A221C616FD8B0028DA3A953D20FF4A9FE87D2C2E45C7B7ABA2EE350CFBD
+Authentication tag: 9972BA50C9D13E9733C2FC07A7E0F667
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.7 %
+
+----- SIMULATED CONTEXT -----
+Battery: 79 % (simulated)
+CPU usage: 28 % (simulated)
+Memory usage: 30 % (simulated)
+Sensitivity: HIGH
+Threat: HIGH
+Network: POOR
+
+----- ADAPTIVE DECISION -----
+Security requirement: 1.00
+Resource pressure: 0.15
+Selected algorithm: AES-128
+AES-GCM key setup + encryption time: 203 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: AES-128-GCM
+Nonce: 964757BBBA4EC625A5FC59FD
+Ciphertext: B9BA66D4D1AE85CE6894A566224CDAC6D02E9311A7F73E0970DBEF474F4E54AF4672BB5C
+Authentication tag: AAD8592BC66D64F009C3EC8C89349BE6
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+Encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 24 % (simulated)
+CPU usage: 18 % (simulated)
+Memory usage: 22 % (simulated)
+Sensitivity: MEDIUM
+Threat: LOW
+Network: UNSTABLE
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.50
+Resource pressure: 0.45
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 126 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: F3D7BA5BF0C7357A2743CA905B2BD046
+Ciphertext + authentication tag: B33808A23292877C4786390FAC9D04C5960866E69373427E6108ADCC07F961FB5A731946D34356759A7AD83040B0C914F60353D9
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------
+
+----- SENSOR DATA -----
+Temperature: 26.6 C
+Humidity: 63.5 %
+
+----- SIMULATED CONTEXT -----
+Battery: 94 % (simulated)
+CPU usage: 56 % (simulated)
+Memory usage: 89 % (simulated)
+Sensitivity: LOW
+Threat: MEDIUM
+Network: NORMAL
+
+----- ADAPTIVE DECISION -----
+Security requirement: 0.40
+Resource pressure: 0.35
+Selected algorithm: ASCON-128
+ASCON-AEAD128 encryption time: 125 us
+
+----- ENCRYPTION -----
+Encryption status: PASS
+Algorithm: ASCON-AEAD128
+Nonce: 207617950A4EFA7E9FF9B4665DEC27AC
+Ciphertext + authentication tag: AD37CD3CCADD019FD424983F429B6A4CACEEAEB78DD4F4EB718DF81A126E242499C964213B51FE55C0A3237E866B8B3B75D98731
+
+Connecting to laptop receiver...
+TCP connection: SUCCESS
+ASCON encrypted message sent to laptop.
+--------------------------------

@@ -1,0 +1,9 @@
+cryptography
+ascon
+pandas
+psutil
+scikit-learn
+joblib
+matplotlib
+seaborn
+flask
